@@ -1,5 +1,7 @@
 #include "WATCard.h"
 
+WATCard::WATCard(){}
+
 void WATCard::deposit( unsigned int amount ) {
     balance += amount;
 }

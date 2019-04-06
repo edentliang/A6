@@ -3,11 +3,13 @@
 
 _Monitor Bank {
     unsigned int numStudents;
-
-    unsigned int accounts[1000];    //student's account buffer
+    unsigned int *accounts;    //student's account buffer
 
   public:
 	Bank( unsigned int numStudents );
+  ~Bank();
 	void deposit( unsigned int id, unsigned int amount );
 	void withdraw( unsigned int id, unsigned int amount );
 };
+
+#endif
